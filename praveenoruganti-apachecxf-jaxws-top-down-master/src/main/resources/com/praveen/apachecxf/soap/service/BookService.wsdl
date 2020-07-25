@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://service.soap.apachecxf.praveen.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="BookService" targetNamespace="http://service.soap.apachecxf.praveen.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.soap.apachecxf.praveen.com/" elementFormDefault="unqualified" targetNamespace="http://service.soap.apachecxf.praveen.com/" version="1.0">
+
+  <xs:element name="getBookNameBasedOnISBN" type="tns:getBookNameBasedOnISBN"/>
+
+  <xs:element name="getBookNameBasedOnISBNResponse" type="tns:getBookNameBasedOnISBNResponse"/>
+
+  <xs:complexType name="getBookNameBasedOnISBN">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getBookNameBasedOnISBNResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getBookNameBasedOnISBN">
+    <wsdl:part element="tns:getBookNameBasedOnISBN" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBookNameBasedOnISBNResponse">
+    <wsdl:part element="tns:getBookNameBasedOnISBNResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="BookService">
+    <wsdl:operation name="getBookNameBasedOnISBN">
+      <wsdl:input message="tns:getBookNameBasedOnISBN" name="getBookNameBasedOnISBN">
+    </wsdl:input>
+      <wsdl:output message="tns:getBookNameBasedOnISBNResponse" name="getBookNameBasedOnISBNResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BookServiceSoapBinding" type="tns:BookService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getBookNameBasedOnISBN">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBookNameBasedOnISBN">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBookNameBasedOnISBNResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BookService">
+    <wsdl:port binding="tns:BookServiceSoapBinding" name="BookServiceImplPort">
+      <soap:address location="http://localhost:8080/praveenoruganti-apachecxf-jaxws-bottom-up/services/book"/>
+    </wsdl:port>
+  </wsdl:service>     
+</wsdl:definitions>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Patient
+	xmlns:tns="http://praveenoruganti.blogspot.com/Patient"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://praveenoruganti.blogspot.com/Patient Patient.xsd "
+	id="1">
+	<tns:Name>PraveenOruganti</tns:Name>
+	<tns:Age>34</tns:Age>
+	<tns:DOB>2001-01-01</tns:DOB>
+	<tns:Email>praveenoruganti@gmail.com</tns:Email>
+	<tns:Email>orugantipraveen@gmail.com</tns:Email>
+	<tns:Gender>M</tns:Gender>
+	<tns:Phone>1234567890</tns:Phone>
+	<tns:Phone>1234567891</tns:Phone>
+	<tns:payment>
+		<tns:insurance>
+			<tns:provider>HDFC</tns:provider>
+			<tns:limit>100000</tns:limit>
+		</tns:insurance>
+	</tns:payment>
+</tns:Patient>
+

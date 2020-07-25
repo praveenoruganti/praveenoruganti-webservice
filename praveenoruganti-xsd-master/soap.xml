@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope>
+	xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+	soap:encodingStyle=" http://www.w3.org/2001/12/soap-encoding">
+	<soap:Header>
+		<!-- Generally Security Information is passed i.e.. meta information -->
+		<wsse:Security>
+			<wsse:UsernameToken>
+				<wsse:Username>praveen</wsse:Username>
+				<wsse:Password>java</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soap:Header>
+	<soap:Body>		
+		<soap:CreditCardReqeuest>
+
+		</soap:CreditCardReqeuest>
+		<soap:Fault>
+			<!-- Fault Information -->
+			<soap:code>soap:Server</soap:code>
+			<soap:Reason>
+				<soap:text>
+					Card Expired
+				</soap:text>
+
+			</soap:Reason>
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>

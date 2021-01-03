@@ -11,6 +11,8 @@
 [<img align="left" alt="praveenoruganti | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 [<img align="left" alt="praveenoruganti | Email" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />][email]
 
+<br/>
+
 [website]: https://praveenorugantitech.blogspot.com
 [twitter]: https://mobile.twitter.com/praveenoruganti
 [facebookgroup]: https://www.facebook.com/groups/praveenorugantitech

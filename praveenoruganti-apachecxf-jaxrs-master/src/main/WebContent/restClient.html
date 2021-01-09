@@ -1,5 +1,15 @@
 <html>
     <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186960773-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-186960773-2');
+	</script>
+
         <title>Patient Data</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="restClient.js"></script>
@@ -13,7 +23,7 @@
              <input type="button" value="read "onClick="doGet()"/>
             <input type="button" value ="add" onClick="doPost()"/>
              <input type="button" value="delete "onClick="doDelete()"/>
-          
+
         </div>
     </body>
 </html>
